@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.colorHeader {
+  background-color: pink;
+}
+
+.contenedorPresentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorPresentacion:hover h1 {
+  display: block;
+}
+.contenedorPresentacion .tituloHeader {
+  display: none;
+  font-size: 23px;
+  color: rgba(14, 13, 13, 0.712);
+  margin-top: 15px;
+  transition: all 0.1s;
+  font-family: "Noto Sans Mono";
+}
+.contenedorPresentacion .navbar-brand img {
+  width: 125px;
+}
+
+/*# sourceMappingURL=style.css.map */
