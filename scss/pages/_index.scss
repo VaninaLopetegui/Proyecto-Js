@@ -1,0 +1,37 @@
+.contenedorIndex {
+    height: 75vh;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    @include D-Flex (center , center);
+    .comenzarJuego {
+        width: 40%;
+        height: 95%;
+        border-radius: 70%;
+        background-color: map-get($colores , "Amarillo" );
+        @include D-Flex (center , center);
+        animation: animacion 2s linear infinite;
+        .waifuGif {
+            img {
+                border-radius: 5%;
+                width: 95%;
+            }
+        }
+    }
+}
+
+
+
+
+@keyframes animacion {
+    0% {
+        box-shadow: 0 0 0 0 rgb(252, 222, 90, .6), 0 0 0 0 rgb(252, 222, 90, .6);
+    }
+    30% {
+        box-shadow: 0 0 0 70px rgb(252, 222, 90, 0), 0 0 0 0 rgb(252, 222, 90, .6);
+    }
+    65% {
+        box-shadow: 0 0 0 70px rgb(252, 222, 90, 0), 0 0 0 30px rgb(252, 222, 90, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgb(252, 222, 90, 0), 0 0 0 30px rgb(252, 222, 90, 0);
+    }
+}

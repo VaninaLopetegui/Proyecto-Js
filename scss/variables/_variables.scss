@@ -1,0 +1,26 @@
+//variables de font//
+//como usarlo? font-family: map-get($font-family , "Titulos o Parrafos"); //
+$font-family: (
+    Titulos: "Noto Sans Mono",
+    Parrafos: "Inconsolata",
+);
+
+//mixin para display flex//
+// como usarlo? @include D-Flex (valorJustify , valorAlign); //
+
+@mixin D-Flex ($justify , $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//variables paleta de colores de mi pagina web//
+//como usarlo? color: map-get($colores , "Nombre de color"); //
+$colores: (
+    Textos: rgba(100, 99, 99, 0.712),
+    Rosa: #FFC0CB,
+    Amarillo: rgb(252, 222, 90),
+    Fucsia: rgb(243, 45, 78),
+    Verde: rgb(64, 238, 64), 
+    Azul: rgb(71, 71, 255), 
+);
