@@ -1,8 +1,17 @@
-.colorHeader {
-    background-color: map-get($colores , "Rosa");
+// Header color
+.header {
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
     border-bottom: solid 4px rgba(253, 126, 147, 0.349);
+    // titulo que desplaza al pasar el mouse encima (contenedorPresentacion)
+    .contenedorPresentacion{
+        .tituloHeader {
+            color: map-get($colores , "Fucsia");
+            font-family: map-get($font-family , "Titulos");
+        }
+    }
 }
 
+// medidas para celular con titulo permanente en pantalla
 @media screen and (min-width:320px) {
     .contenedorPresentacion{
         @include D-Flex (center , center);
@@ -32,6 +41,7 @@
     }
 }
 
+// activar titulo de presentacion hecho en medida 320px
 @media screen and (min-width:992px) {
     .contenedorPresentacion{
         &:hover h1 {

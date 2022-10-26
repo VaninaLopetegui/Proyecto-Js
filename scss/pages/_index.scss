@@ -1,26 +1,4 @@
-.contenedorIndex {
-    height: 75vh;
-    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-    @include D-Flex (center , center);
-    .comenzarJuego {
-        width: 40%;
-        height: 95%;
-        border-radius: 70%;
-        background-color: map-get($colores , "Amarillo" );
-        @include D-Flex (center , center);
-        animation: animacion 2s linear infinite;
-        .waifuGif {
-            img {
-                border-radius: 5%;
-                width: 95%;
-            }
-        }
-    }
-}
-
-
-
-
+//              animacion de circulo amarillo para empezar juego        
 @keyframes animacion {
     0% {
         box-shadow: 0 0 0 0 rgb(252, 222, 90, .6), 0 0 0 0 rgb(252, 222, 90, .6);
@@ -31,7 +9,102 @@
     65% {
         box-shadow: 0 0 0 70px rgb(252, 222, 90, 0), 0 0 0 30px rgb(252, 222, 90, 0);
     }
-    100%{
+    100% {
         box-shadow: 0 0 0 0 rgb(252, 222, 90, 0), 0 0 0 30px rgb(252, 222, 90, 0);
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .contenedorIndex {
+        height: 100vh;
+        width: 100%;
+        background-image: url(../../img/background.jpg);
+        @include D-Flex (center, center);
+        //section padre que engloba botones y gif en circulo amarillo (comenzarJuego)
+        .comenzarJuego {
+            width: 100%;
+            height: 40%;
+            border-radius: 70%;
+            background-color: map-get($colores , "Amarillo");
+            @include D-Flex (center, center);
+            animation: animacion 2s linear infinite;
+            // gif de waifus (waifuGif)
+            .waifuGif {
+                display: none;
+                img {
+                    border-radius: 5%;
+                }
+            }
+        }
+        // botones de menu (botonesComienzo)
+        .botonesComienzo {
+            display: flex;
+            flex-direction: column;
+            .botones {
+                width: 250px;
+                height: 100px;
+                margin: 10px;
+                text-align: center;
+                font-family: map-get($font-family , "Titulos");
+                border: 10px groove map-get($colores , "Fucsia");
+                border-radius: 15%;
+                background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+                color: map-get($colores , "Fucsia");
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 630px) {
+    .contenedorIndex {
+        //section padre que engloba botones y gif en circulo amarillo (comenzarJuego)
+        .comenzarJuego {
+            width: 90%;
+            height: 65%;
+        }
+    }
+}
+
+@media screen and (min-width: 815px) {
+    .contenedorIndex {
+        //section padre que engloba botones y gif en circulo amarillo (comenzarJuego)
+        .comenzarJuego {
+            // gif de waifus (waifuGif)
+            .waifuGif {
+                display: block;
+                img {
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 855px) {
+    .contenedorIndex {
+        //section padre que engloba botones y gif en circulo amarillo (comenzarJuego)
+        .comenzarJuego {
+            height: 80%;
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .contenedorIndex {
+        height: 85vh;
+        width: 100%;
+        //section padre que engloba botones y gif en circulo amarillo (comenzarJuego)
+        .comenzarJuego {
+            width: 60%;
+            height: 95%;
+            // gif de waifus (waifuGif)
+            .waifuGif {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
 }

@@ -1,8 +1,9 @@
 //variables de font//
-//como usarlo? font-family: map-get($font-family , "Titulos o Parrafos"); //
+//como usarlo? font-family: map-get($font-family , "Titulos o Nombres o Textos"); //
 $font-family: (
-    Titulos: "Noto Sans Mono",
-    Parrafos: "Inconsolata",
+    Titulos: "Fredoka One",
+    Nombres: "Changa", 
+    Textos: "Shadows Into Light",
 );
 
 //mixin para display flex//
@@ -17,7 +18,7 @@ $font-family: (
 //variables paleta de colores de mi pagina web//
 //como usarlo? color: map-get($colores , "Nombre de color"); //
 $colores: (
-    Textos: rgba(100, 99, 99, 0.712),
+    Textos: rgba(19, 19, 19, 0.712),
     Rosa: #FFC0CB,
     Amarillo: rgb(252, 222, 90),
     Fucsia: rgb(243, 45, 78),

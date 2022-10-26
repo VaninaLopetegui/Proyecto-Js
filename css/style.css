@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
-.colorHeader {
-  background-color: #FFC0CB;
+.header {
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
   border-bottom: solid 4px rgba(253, 126, 147, 0.349);
+}
+.header .contenedorPresentacion .tituloHeader {
+  color: rgb(243, 45, 78);
+  font-family: "Fredoka One";
 }
 
 @media screen and (min-width: 320px) {
@@ -20,10 +24,10 @@
     display: block;
     font-size: 15px;
     text-align: center;
-    color: rgba(100, 99, 99, 0.712);
+    color: rgba(19, 19, 19, 0.712);
     text-shadow: 5px 5px 0px rgb(252, 222, 90);
     margin-top: 15px;
-    font-family: "Noto Sans Mono";
+    font-family: "Fredoka One";
   }
   .contenedorPresentacion .navbar-brand img {
     width: 125px;
@@ -43,28 +47,6 @@
     font-size: 23px;
   }
 }
-.contenedorIndex {
-  height: 75vh;
-  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contenedorIndex .comenzarJuego {
-  width: 40%;
-  height: 95%;
-  border-radius: 70%;
-  background-color: rgb(252, 222, 90);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: animacion 2s linear infinite;
-}
-.contenedorIndex .comenzarJuego .waifuGif img {
-  border-radius: 5%;
-  width: 95%;
-}
-
 @keyframes animacion {
   0% {
     box-shadow: 0 0 0 0 rgba(252, 222, 90, 0.6), 0 0 0 0 rgba(252, 222, 90, 0.6);
@@ -77,6 +59,83 @@
   }
   100% {
     box-shadow: 0 0 0 0 rgba(252, 222, 90, 0), 0 0 0 30px rgba(252, 222, 90, 0);
+  }
+}
+@media screen and (min-width: 320px) {
+  .contenedorIndex {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../img/background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedorIndex .comenzarJuego {
+    width: 100%;
+    height: 40%;
+    border-radius: 70%;
+    background-color: rgb(252, 222, 90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animacion 2s linear infinite;
+  }
+  .contenedorIndex .comenzarJuego .waifuGif {
+    display: none;
+  }
+  .contenedorIndex .comenzarJuego .waifuGif img {
+    border-radius: 5%;
+  }
+  .contenedorIndex .botonesComienzo {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorIndex .botonesComienzo .botones {
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    font-family: "Fredoka One";
+    border: 10px groove rgb(243, 45, 78);
+    border-radius: 15%;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    color: rgb(243, 45, 78);
+  }
+}
+@media screen and (min-width: 630px) {
+  .contenedorIndex .comenzarJuego {
+    width: 90%;
+    height: 65%;
+  }
+}
+@media screen and (min-width: 815px) {
+  .contenedorIndex .comenzarJuego .waifuGif {
+    display: block;
+  }
+  .contenedorIndex .comenzarJuego .waifuGif img {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 855px) {
+  .contenedorIndex .comenzarJuego {
+    height: 80%;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .contenedorIndex {
+    height: 85vh;
+    width: 100%;
+  }
+  .contenedorIndex .comenzarJuego {
+    width: 60%;
+    height: 95%;
+  }
+  .contenedorIndex .comenzarJuego .waifuGif {
+    display: block;
+  }
+  .contenedorIndex .comenzarJuego .waifuGif img {
+    width: 100%;
   }
 }
 

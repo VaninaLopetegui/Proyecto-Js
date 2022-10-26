@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Simulador de citas online</title>
     <!--                  linkeo de fuentes           -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <!--                  linkeo de css y boostrap           -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -18,19 +19,19 @@
     <!--         icono de pestaña y etiquetas meta           -->
     <link rel="icon" href="./img/icon.png">
     <meta name="description="
-        content="Una pagina de citas donde podras interactuar con los personajes disponibles que mas te gusten">
+        content="Una simulador de citas donde podras interactuar con los personajes inusuales">
     <meta name="owner" content="Vanina Lopetegui García">
 </head>
 
 <body>
     <!--                  header                      -->
-    <header class="navbar navbar-expand-lg colorHeader">
+    <header class="navbar navbar-expand-lg header">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse" id="navbarNav">
+            <nav class="nav collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="contenedorPresentacion">
                         <a class="navbar-brand hvr-bounce-in">
@@ -48,22 +49,27 @@
     <main class="contenedorIndex">
         <section class="comenzarJuego">
             <div class="waifuGif">
-                <img src="./img/waifuGifSinFondo.gif" alt="">
+                <img src="./img/waifu.gif" alt="">
             </div>
-            <button>
-                ¡Click aquí para comenzar!
-            </button>
+            <div class="botonesComienzo">
+                <button class="botones">
+                    Comenzar juego
+                </button>
+                <button class="botones" id="botonAyuda">
+                    Ayuda
+                </button>
+                <button class="botones">
+                    Sobre creadores
+                </button>
+            </div>
             <div class="waifuGif">
-                <img src="./img/waifuGifSinFondo.gif" alt="">
+                <img src="./img/waifu.gif" alt="">
             </div>
         </section>
     </main>
-    <!--                  footer                      -->
-    <footer>
-
-    </footer>
     <!--                 script de boostrap           -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--                 script de index.js       -->
+    <script src="./js/_index.js"></script>
 </body>
-
 </html>
